@@ -1,0 +1,55 @@
+Ethan Ma 3/26/26
+Functions and Classes assignment
+
+A function is a segment of code that can be called and repeated. In c++, creating a function looks like:
+
+(return type) (name)(){
+    code
+}
+
+ex.
+
+void myFunc(){
+    cout << "Hello world";
+}
+
+the return type allows for a function to return a specific type of variable, for instance, we can create an addition function that
+returns the sum of two numbers. To do this, we also need to pass variables to the function:
+
+int add(int num1, int num2) {
+    return num1+num2;
+}
+
+int main(){
+    int num1 = 6;
+    add(5, num1);
+}
+
+The variables created in the function are seperate from all others, so you can reuse names if you want.
+Functions are great for rapidly calling code that needs to be repeated many times in a program.
+
+
+A class is a object similar to a variable, but has more features. It can have its own variables and functions, which are called methods.
+Classes in c++ are created like this:
+
+class myClass{
+string name;
+
+    myClass(string x){
+        name = x
+    }
+
+    void classFunc(){
+        cout << "Hello, my name is " << name;
+    }
+
+};
+
+The first code segment is called a constructor, it is called when a class is created and defines some of the variables in it.
+Creating a class in the main function looks like:
+
+myClass Edward(edward);
+
+If we want to call the method in the class, we do:
+
+Edward.classFunc();
